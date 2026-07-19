@@ -87,8 +87,82 @@ aside p {
 .camera-marker {
   background: transparent;
   border: none;
-  box-shadow: none;
-  font-size: 32px;
+}
+
+.atlas-marker {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 3px solid #f2c94c;
+  border-radius: 50%;
+  background: #0b1018;
+  box-shadow:
+    0 0 0 5px rgba(242, 201, 76, 0.14),
+    0 0 22px rgba(242, 201, 76, 0.65),
+    0 8px 18px rgba(0, 0, 0, 0.55);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.atlas-marker:hover {
+  transform: scale(1.14);
+  box-shadow:
+    0 0 0 7px rgba(242, 201, 76, 0.18),
+    0 0 30px rgba(242, 201, 76, 0.85),
+    0 10px 22px rgba(0, 0, 0, 0.6);
+}
+
+.marker-north {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f2c94c;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.camera-body {
+  position: absolute;
+  top: 21px;
+  left: 13px;
+  width: 32px;
+  height: 22px;
+  border: 2px solid #f2c94c;
+  border-radius: 5px;
+}
+
+.camera-body::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 8px;
+  width: 12px;
+  height: 6px;
+  border: 2px solid #f2c94c;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.camera-lens {
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f2c94c;
+  border-radius: 50%;
+  background: #223a56;
+}
+
+.marker-point {
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  width: 17px;
+  height: 17px;
+  background: #f2c94c;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
 }
 
 .popup-card {
