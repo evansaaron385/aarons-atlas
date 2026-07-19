@@ -14,7 +14,7 @@ header {
   padding: 48px 32px;
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
-    url("../photos/IMG_4262.jpg");
+    url("IMG_4262.JPG");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -263,7 +263,7 @@ aside p {
   inset: 0;
   background:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)),
-    url("../photos/IMG_4262.jpg");
+    url("IMG_4262.JPG");
   background-size: cover;
   background-position: center;
   z-index: 9999;
