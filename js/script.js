@@ -2,11 +2,46 @@ const DEFAULT_CENTER = [21.4389, -158.0001];
 
 const map = L.map("map").setView(DEFAULT_CENTER, 10);
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution: "&copy; OpenStreetMap contributors"
-}).addTo(map);
+const darkAtlas = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+  {
+    subdomains: "abcd",
+    maxZoom: 20,
+    attribution: "&copy; OpenStreetMap contributors &copy; CARTO"
+  }
+);
 
+const voyager = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+  {
+    subdomains: "abcd",
+    maxZoom: 20,
+    attribution: "&copy; OpenStreetMap contributors &copy; CARTO"
+  }
+);
+
+const openStreetMap = L.tileLayer(
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  {
+    maxZoom: 19,
+    attribution: "&copy; OpenStreetMap contributors"
+  }
+);
+
+darkAtlas.addTo(map);
+
+L.control.layers(
+  {
+    "Dark Atlas": darkAtlas,
+    "Voyager": voyager,
+    "OpenStreetMap": openStreetMap
+  },
+  null,
+  {
+    position: "topright",
+    collapsed: true
+  }
+).addTo(map);
 const cameraIcon = L.divIcon({
   html: "📷",
   className: "camera-marker",
