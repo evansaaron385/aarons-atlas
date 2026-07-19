@@ -117,7 +117,7 @@
     "caption": "Winter light filters through a managed pine stand in southwest Alabama."
   },
   {
-    "title": "Boneyard Beach",
+    "title": "Boneyard",
     "location": "Big Talbot Island State Park",
     "lat": 30.5026,
     "lng": -81.4501,
@@ -127,7 +127,7 @@
     "date": "Date Unknown",
     "camera": "Unknown",
     "lens": "Unknown",
-    "caption": "Boneyard Beach Adventuring.",
+    "caption": "Caption coming soon.",
     "sourceFile": "Boneyard.JPG",
     "importId": "812504667cb6167cf8b65fb9b9562de24604169973878c9a5d66dadb9aa0d927"
   },
@@ -160,5 +160,35 @@
     "caption": "Moana's display at Epcot Island. Very Magical.",
     "sourceFile": "Moana.JPG",
     "importId": "b37facf347b0c273fcc790da262ed33a97eeaec051d9b0d131c40253d2207a15"
+  },
+  {
+    "title": "Macedonian Landscape",
+    "location": "GPS location",
+    "lat": 41.5468361,
+    "lng": 22.0998472,
+    "locationAccuracy": "GPS",
+    "category": "Travel",
+    "image": "photos/web/img-2663-7173bef1.jpg",
+    "date": "2025:06:04 08:29:55",
+    "camera": "Apple iPhone 16",
+    "lens": "iPhone 16 back dual wide camera 5.96mm f/1.6",
+    "sourceFile": "IMG_2663.jpeg",
+    "importId": "7173bef1666493552484a5cf0838b3b672aff815445d920b8ab4f316048f4ba1"
+  },
+  {
+    "title": "Macedonian Landscape",
+    "location": "GPS location",
+    "lat": 41.5427056,
+    "lng": 22.1003528,
+    "locationAccuracy": "GPS",
+    "category": "Travel",
+    "image": "photos/web/img-2577-682bdd0f.jpg",
+    "date": "2025:05:25 15:43:01",
+    "camera": "Apple iPhone 16",
+    "lens": "iPhone 16 back dual wide camera 5.96mm f/1.6",
+    
+    "sourceFile": "IMG_2577.jpeg",
+    "importId": "682bdd0ffdddf634a306747b8a9b43d787d9f7b7cd22982aa25773aea35a84fe"
   }
 ]
+
