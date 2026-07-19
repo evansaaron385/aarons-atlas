@@ -41,7 +41,18 @@ main {
   display: flex;
   height: calc(100vh - 260px);
 }
+/* About Me text colors */
+.about-section {
+  background-color: #f4f6f3;
+}
 
+.about-container h2 {
+  color: #1f3d32;
+}
+
+.about-container p {
+  color: #2f3a35;
+}
 aside {
   width: 320px;
   padding: 24px;
