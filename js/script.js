@@ -43,11 +43,19 @@ L.control.layers(
   }
 ).addTo(map);
 const cameraIcon = L.divIcon({
-  html: "📷",
+  html: `
+    <div class="atlas-marker">
+      <span class="marker-north">N</span>
+      <span class="camera-body">
+        <span class="camera-lens"></span>
+      </span>
+      <span class="marker-point"></span>
+    </div>
+  `,
   className: "camera-marker",
-  iconSize: [32, 32],
-  iconAnchor: [16, 16],
-  popupAnchor: [0, -12]
+  iconSize: [58, 68],
+  iconAnchor: [29, 64],
+  popupAnchor: [0, -62]
 });
 
 let allPhotos = [];
