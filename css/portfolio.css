@@ -295,3 +295,8 @@ html {
     display: none;
   }
 }
+.portfolio-hero h1,
+.atlas-toolbar strong,
+#landing-page h1 {
+  color: white;
+}
