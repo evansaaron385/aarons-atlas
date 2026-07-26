@@ -3,116 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaron Evans | Photo Map Portfolio</title>
-
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Aaron Evans | Environmental GIS Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
 </head>
-<body>
-    <section id="landing-page">
-  <div class="landing-overlay">
-    <h1>Aaron's Atlas</h1>
-    <p>Environmental Scientist • GIS • Photographer</p>
-    <button id="enter-atlas">Enter the Atlas</button>
-  </div>
-</section>
-  <header>
-  <div class="hero-content">
-    <h1>Aaron's Atlas</h1>
-    <p>Maps • Photography • Exploration</p>
-  </div>
-</header>
-<section class="about-section" id="about">
 
-  <div class="about-image">
+<body class="portfolio-page">
+  <header class="portfolio-hero">
+    <div class="hero-content">
+      <p class="eyebrow">Environmental Science • GIS • Remote Sensing</p>
+      <h1>Aaron's Atlas</h1>
+      <p>Maps • Photography • Exploration</p>
 
-    <img
+      <div class="hero-actions">
+        <a class="primary-button" href="#gis-projects">View GIS Projects</a>
+        <a class="secondary-button" href="atlas.html">Launch Interactive Atlas</a>
+      </div>
+    </div>
+  </header>
 
-      src="assets/Aaron-about.jpg.jpg"
-
-      alt="Aaron outdoors exploring a coastal natural area"
-
-    >
-
-  </div>
-
-  <div class="about-text">
-
-    <h2>Meet Aaron</h2>
-
-    <p>
-      I’m an environmental scientist and GIS professional who enjoys turning 
-      geospatial data into practical environmental solutions. My work has included 
-      remote sensing, hydrology mapping, and natural resource management using ArcGIS Pro, 
-      LiDAR, and aerial imagery to support decision-making across large forest landscapes.
-    </p>
-
-    <p>
-      Alongside my civilian experience, six years as a CBRN NCO in the Army National Guard 
-      strengthened my leadership, problem-solving, and emergency response skills. Whether I’m 
-      building maps, analyzing environmental data, or exploring new places with my camera, I’m 
-      driven by curiosity and a passion for understanding the world around us.
-  
-    </p>
- 
-    <a
-      href="assets/Aaron_Evans_Resume_EnvD.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="resume-button"
-    >
-      View My Resume
-    </a>
-  </div>
-</section>
-
-  
-  <main>
-  <aside>
-  <h2>Aaron's Atlas</h2>
-  <p>Filter the map by photo type.</p>
-  <div id="photo-count">Loading photos…</div>
-
-  <div class="filters">
-    <button data-category="All">All</button>
-  </div>
-</aside>
-    
-    <section id="map"></section>
-    <section id="photo-panel" class="hidden">
-  <button id="close-panel">×</button>
-  <img id="panel-image" src="" alt="" />
-  <h2 id="panel-title"></h2>
-
-<div class="photo-meta">
-
-    <div id="panel-location"></div>
-
-    <div id="panel-date">
-        📅 Coming Soon
+  <section class="about-section" id="about">
+    <div class="about-photo">
+      <img
+        src="assets/Aaron-about.jpg.jpg"
+        alt="Aaron outdoors exploring a coastal natural area"
+      />
     </div>
 
-</div>
+    <div class="about-text">
+      <h2>Meet Aaron</h2>
 
-<span id="panel-category"></span>
+      <p>
+        I’m an environmental scientist and GIS professional who enjoys turning
+        geospatial data into practical environmental solutions. My work has included
+        remote sensing, hydrology mapping, and natural resource management using
+        ArcGIS Pro, LiDAR, and aerial imagery to support decision-making across large
+        forest landscapes.
+      </p>
 
-<h3>Story</h3>
+      <p>
+        Alongside my civilian experience, six years as a CBRN NCO in the Army
+        National Guard strengthened my leadership, problem-solving, and emergency
+        response skills. Whether I’m building maps, analyzing environmental data,
+        or exploring new places with my camera, I’m driven by curiosity and a passion
+        for understanding the world around us.
+      </p>
 
-<p id="panel-caption"></p>
+      <div class="about-actions">
+        <a
+          href="assets/Aaron_Evans_Resume_EnvD.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="resume-button"
+        >
+          View My Resume
+        </a>
 
-<hr>
+        <a href="atlas.html" class="atlas-button">
+          Explore the Atlas
+        </a>
+      </div>
+    </div>
+  </section>
 
-<h3>Camera</h3>
+  <section class="projects-section" id="gis-projects">
+    <div class="section-heading">
+      <p class="eyebrow">Featured GIS Work</p>
+      <h2>DEM-Derived Stream Network Analysis</h2>
 
-<div id="camera-info">
+      <p>
+        A terrain-based hydrologic workflow completed in ArcGIS Pro using Fill,
+        Flow Direction, Flow Accumulation, stream extraction, and comparison against
+        OpenStreetMap hydrography.
+      </p>
+    </div>
 
-    <p>📷 Metadata coming soon...</p>
+    <div class="project-grid">
+      <article class="project-card">
+        <a
+          class="project-image-link"
+          href="assets/dem-derived-stream-network-india.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="assets/dem-derived-stream-network-india.png"
+            alt="DEM-derived stream network analysis map"
+          />
+        </a>
 
-</div>
-</section>
-  </main>
+        <div class="project-card-content">
+          <h3>DEM-Derived Stream Network</h3>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="js/script.js"></script>
+          <p>
+            Stream and river features extracted from elevation data using a
+            repeatable ModelBuilder hydrology workflow.
+          </p>
+
+          <a
+            class="text-link"
+            href="assets/dem-derived-stream-network-india.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open full-resolution map →
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a
+          class="project-image-link"
+          href="assets/dem-osm-stream-comparison-india.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="assets/dem-osm-stream-comparison-india.png"
+            alt="Comparison of DEM-derived streams and OpenStreetMap hydrography"
+          />
+        </a>
+
+        <div class="project-card-content">
+          <h3>Hydrography Comparison</h3>
+
+          <p>
+            Visual comparison of terrain-derived drainage features with
+            OpenStreetMap rivers and streams.
+          </p>
+
+          <a
+            class="text-link"
+            href="assets/dem-osm-stream-comparison-india.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open full-resolution map →
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="workflow-strip" aria-label="Hydrology workflow">
+      <span>DEM</span>
+      <b>→</b>
+      <span>Fill</span>
+      <b>→</b>
+      <span>Flow Direction</span>
+      <b>→</b>
+      <span>Flow Accumulation</span>
+      <b>→</b>
+      <span>Stream Extraction</span>
+      <b>→</b>
+      <span>OSM Comparison</span>
+    </div>
+  </section>
+
+  <section class="atlas-cta">
+    <div>
+      <p class="eyebrow">Photography + Place</p>
+      <h2>Explore the Interactive Atlas</h2>
+
+      <p>
+        Browse field, nature, travel, and photography locations on a dedicated
+        interactive map.
+      </p>
+    </div>
+
+    <a class="primary-button" href="atlas.html">
+      Launch Aaron's Atlas
+    </a>
+  </section>
+
+  <footer class="portfolio-footer">
+    <p>© 2026 Aaron Evans • Environmental Science • GIS • Photography</p>
+  </footer>
 </body>
 </html>
