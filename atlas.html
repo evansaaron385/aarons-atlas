@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaron's Atlas | Interactive Photo Map</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+
+<body class="atlas-page">
+  <section id="landing-page">
+    <div class="landing-overlay">
+      <h1>Aaron's Atlas</h1>
+      <p>Photography • Place • Exploration</p>
+      <button id="enter-atlas">Enter the Atlas</button>
+      <a class="landing-back-link" href="index.html">Return to Portfolio</a>
+    </div>
+  </section>
+
+  <nav class="atlas-toolbar">
+    <a href="index.html" class="back-button">← Return to Portfolio</a>
+
+    <div>
+      <strong>Aaron's Atlas</strong>
+      <span>Interactive Photo Map</span>
+    </div>
+  </nav>
+
+  <main class="atlas-main">
+    <aside>
+      <h2>Aaron's Atlas</h2>
+      <p>Filter the map by photo type.</p>
+
+      <div id="photo-count">Loading photos…</div>
+
+      <div class="filters">
+        <button data-category="All">All</button>
+      </div>
+    </aside>
+
+    <section id="map"></section>
+
+    <section id="photo-panel" class="hidden">
+      <button id="close-panel" aria-label="Close photo details">×</button>
+
+      <img id="panel-image" src="" alt="" />
+      <h2 id="panel-title"></h2>
+
+      <div class="photo-meta">
+        <div id="panel-location"></div>
+        <div id="panel-date">📅 Coming Soon</div>
+      </div>
+
+      <span id="panel-category"></span>
+
+      <h3>Story</h3>
+      <p id="panel-caption"></p>
+
+      <hr />
+
+      <h3>Camera</h3>
+
+      <div id="camera-info">
+        <p>📷 Metadata coming soon...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
