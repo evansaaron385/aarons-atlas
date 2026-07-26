@@ -242,7 +242,7 @@ html {
 
 @media (max-width: 850px) {
   .portfolio-hero {
-    min-height: 650px;
+    min-height: 800px;
     padding: 60px 22px;
   }
 
