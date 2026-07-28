@@ -300,3 +300,18 @@ html {
 #landing-page h1 {
   color: white;
 }
+/* Featured environmental suitability project */
+
+.featured-project-grid {
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+}
+
+.featured-project-card img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.project-subsection-heading {
+  margin-top: 80px;
+}
